@@ -6,7 +6,7 @@ An Android application for handling Toast BadTokenException happenning on Androi
 
 
 ```java
-        ToastHandler.getINSTANCE().showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
+ToastHandler.getINSTANCE().showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
 ```
 
 ### Why

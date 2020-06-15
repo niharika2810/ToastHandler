@@ -43,16 +43,12 @@ This exception occurs regardless of whether the `Context` you passed to `Toast` 
  
  See the detail diff of **Android Toast sources**: 
 
-![handleShow25vs26.png](diff/handleShow25vs26.png)
+![ToastDiff.png](diff/ToastDiff.png)
 
 ### How
 
 So In this sample application I have replaced the base Context to a `SafeToastContext`, it will hook the `WindowManagerWrapper.addView(view, params)` method and fix the exception. 
 
-
-### Reference
-
-https://github.com/PureWriter/ToastCompat
 
 
 

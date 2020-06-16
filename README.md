@@ -10,6 +10,8 @@ Add this to your app build.gradle:
 implementation 'com.toastfix:toastcompatwrapper:0.0.1'
 ```
 
+Use this wherever you are showing Toast:
+
 ```java
 ToastHandler.getINSTANCE().showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
 ```

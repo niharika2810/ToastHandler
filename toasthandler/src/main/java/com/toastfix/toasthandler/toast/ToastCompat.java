@@ -1,4 +1,4 @@
-package com.sample.toasthandler.toast;
+package com.toastfix.toasthandler.toast;
 
 
 import android.annotation.SuppressLint;

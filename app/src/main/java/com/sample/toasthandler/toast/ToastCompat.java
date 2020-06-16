@@ -50,7 +50,7 @@ public final class ToastCompat extends Toast {
         // the View will unwrap the base context and we are in vain.
         @SuppressLint("ShowToast")
         Toast toast = Toast.makeText(context, text, duration);
-        setContextCompat(toast.getView(), new SafeToastContext(context));
+        setContextCompat(toast.getView(), new ToastContextWrapper(context));
         return new ToastCompat(context, toast);
     }
 
@@ -108,7 +108,7 @@ public final class ToastCompat extends Toast {
     @Override
     public void setView(View view) {
         toast.setView(view);
-        setContextCompat(view, new SafeToastContext(view.getContext()));
+        setContextCompat(view, new ToastContextWrapper(view.getContext()));
     }
 
 

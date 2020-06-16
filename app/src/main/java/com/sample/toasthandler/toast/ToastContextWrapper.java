@@ -12,9 +12,9 @@ import androidx.annotation.NonNull;
 /**
  * @author Niharika.Arora
  */
-final class SafeToastContext extends ContextWrapper {
+final class ToastContextWrapper extends ContextWrapper {
 
-    SafeToastContext(@NonNull Context base) {
+    ToastContextWrapper(@NonNull Context base) {
         super(base);
     }
 

@@ -4,6 +4,9 @@ An Android library for handling Toast BadTokenException happenning on Android AP
 
 ### Usage (Please refer the app sample for usage)
 
+```groovy
+implementation 'com.toastfix:toastcompatwrapper:0.0.1'
+```
 
 ```java
 ToastHandler.getINSTANCE().showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);

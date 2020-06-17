@@ -1,13 +1,23 @@
 # ToastHandler
-An Android application for handling Toast BadTokenException happenning on Android API level 25 and showing Toast smoothly on All Android versions
+An Android library for handling Toast BadTokenException happenning on Android API level 25 and showing Toast smoothly on All Android versions.
 
 
-### Usage
+### Usage 
 
+Add this to your app build.gradle:
+
+```groovy
+implementation 'com.toastfix:toastcompatwrapper:0.0.1'
+```
+
+Use this wherever you are showing Toast:
 
 ```java
 ToastHandler.getINSTANCE().showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
 ```
+
+Please refer the demo for usage.
+
 
 ### Why
 
@@ -47,7 +57,7 @@ This exception occurs regardless of whether the `Context` you passed to `Toast` 
 
 ### How
 
-So In this sample application ,I have created `ToastHandler` class which is responsible for showing Toast smoothly on all API versions and replaced the base Context to a `ToastContextWrapper`, it will hook the WindowManagerWrapper.addView(view, params) method and fix the exception.
+So In this library ,I have created `ToastHandler` class which is responsible for showing Toast smoothly on all API versions and replaced the base Context to a `ToastContextWrapper`, it will hook the WindowManagerWrapper.addView(view, params) method and fix the exception.
 
 
 

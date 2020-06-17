@@ -1,5 +1,5 @@
 # ToastHandler
-An Android library for handling Toast BadTokenException happenning on Android API level 25 and showing Toast smoothly on All Android versions.
+An Android library for handling Toast BadTokenException happening on Android API level 25 and showing Toast smoothly on All Android versions.
 
 
 ### Usage 

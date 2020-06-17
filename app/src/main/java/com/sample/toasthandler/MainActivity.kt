@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import com.toastfix.toasthandler.toast.ToastHandler
+import com.toastfix.toastcompatwrapper.ToastHandler
 
 class MainActivity : AppCompatActivity() {
 

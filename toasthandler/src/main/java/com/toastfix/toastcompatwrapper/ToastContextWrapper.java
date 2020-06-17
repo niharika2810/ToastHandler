@@ -1,4 +1,4 @@
-package com.toastfix.toasthandler.toast;
+package com.toastfix.toastcompatwrapper;
 
 import android.content.Context;
 import android.content.ContextWrapper;

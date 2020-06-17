@@ -1,4 +1,4 @@
-package com.toastfix.toasthandler
+package com.toastfix.toastcompatwrapper
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

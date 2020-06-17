@@ -1,4 +1,4 @@
-package com.toastfix.toasthandler
+package com.toastfix.toastcompatwrapper
 
 import org.junit.Test
 

@@ -8,7 +8,7 @@ publish {
 
     def groupProjectID = 'com.toastfix'
     def artifactProjectID = 'toastcompatwrapper'
-    def publishVersionID = '0.0.1'
+    def publishVersionID = '0.0.2'
 
     userOrg = '{userName}'
     repoName = '{repoName}'

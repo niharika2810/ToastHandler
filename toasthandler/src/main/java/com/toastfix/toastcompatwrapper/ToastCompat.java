@@ -1,4 +1,4 @@
-package com.toastfix.toasthandler.toast;
+package com.toastfix.toastcompatwrapper;
 
 
 import android.annotation.SuppressLint;
@@ -39,8 +39,8 @@ public final class ToastCompat extends Toast {
     /**
      * Make a standard toast that just contains a text view.
      *
-     * @param context  The context to use.  Usually your {@link android.app.Application}
-     *                 or {@link android.app.Activity} object.
+     * @param context  The context to use.  Usually your {@link Application}
+     *                 or {@link Activity} object.
      * @param text     The text to show.  Can be formatted text.
      * @param duration How long to display the message.  Either {@link #LENGTH_SHORT} or
      *                 {@link #LENGTH_LONG}
@@ -57,8 +57,8 @@ public final class ToastCompat extends Toast {
     /**
      * Make a standard toast that just contains a text view with the text from a resource.
      *
-     * @param context  The context to use.  Usually your {@link android.app.Application}
-     *                 or {@link android.app.Activity} object.
+     * @param context  The context to use.  Usually your {@link Application}
+     *                 or {@link Activity} object.
      * @param resId    The resource id of the string resource to use.  Can be formatted text.
      * @param duration How long to display the message.  Either {@link #LENGTH_SHORT} or
      *                 {@link #LENGTH_LONG}

@@ -22,7 +22,7 @@ class ToastHandler {
      * Method to show Toast
      */
     fun showToast(context: Context, message: String, length: Int) {
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.N_MR1) {
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.N_MR1) {
             ToastCompat.makeText(
                 context,
                 message,

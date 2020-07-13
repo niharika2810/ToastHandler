@@ -46,7 +46,7 @@ public final class ToastCompat extends Toast {
      *                 {@link #LENGTH_LONG}
      */
     public static ToastCompat makeText(Context context, CharSequence text, int duration) {
-        // We cannot pass the SafeToastContext to Toast.makeText() because
+        // We cannot pass the ToastContextWrapper to Toast.makeText() because
         // the View will unwrap the base context and we are in vain.
         @SuppressLint("ShowToast")
         Toast toast = Toast.makeText(context, text, duration);

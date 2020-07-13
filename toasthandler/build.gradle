@@ -8,7 +8,7 @@ publish {
 
     def groupProjectID = 'com.toastfix'
     def artifactProjectID = 'toastcompatwrapper'
-    def publishVersionID = '0.0.2'
+    def publishVersionID = '1.0.0'
 
     userOrg = '{userName}'
     repoName = '{repoName}'
@@ -25,7 +25,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"

@@ -6,18 +6,9 @@ import android.widget.Toast
 
 /**
  * @author Niharika.Arora
- * ToastHandler class for showing toast
+ * ToastHandler Singleton for showing toast
  */
-class ToastHandler {
-
-    companion object {
-
-        @JvmStatic
-        val INSTANCE: ToastHandler by lazy {
-            ToastHandler()
-        }
-    }
-
+object ToastHandler {
     /**
      * Method to show Toast
      */
@@ -37,7 +28,7 @@ class ToastHandler {
      * Method to return Toast instance
      */
     fun getToastInstance(context: Context, message: String, length: Int): Toast {
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.N_MR1) {
+        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.N_MR1) {
             return ToastCompat.makeText(
                 context,
                 message,

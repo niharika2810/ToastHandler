@@ -63,10 +63,6 @@ This exception occurs regardless of whether the `Context` you passed to `Toast` 
 
 ![ToastDiff.png](diff/ToastDiff.png)
 
-### How
-
-So In this library ,I have created `ToastHandler` class which is responsible for showing Toast smoothly on all API versions and replaced the base Context to a `ToastContextWrapper`, it will hook the WindowManagerWrapper.addView(view, params) method and fix the exception.
-
 
 
 

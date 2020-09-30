@@ -1,3 +1,5 @@
+You can raise PR for any contribution and optimization. :-)
+
 # ToastHandler
 Reference from [StackOverFlow](https://stackoverflow.com/questions/51532449/fatal-exception-android-view-windowmanagerbadtokenexception-unable-to-add-wind)
 
@@ -63,7 +65,6 @@ This exception occurs regardless of whether the `Context` you passed to `Toast` 
 
 ![ToastDiff.png](art/ToastDiff.png)
 
-You can raise PR for any contribution and optimization. :-)
 
 
 

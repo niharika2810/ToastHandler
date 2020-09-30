@@ -61,7 +61,7 @@ This exception occurs regardless of whether the `Context` you passed to `Toast` 
  
  See the detail diff of **Android Toast sources**: 
 
-![ToastDiff.png](diff/ToastDiff.png)
+![ToastDiff.png](art/ToastDiff.png)
 
 
 

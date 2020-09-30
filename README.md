@@ -63,6 +63,8 @@ This exception occurs regardless of whether the `Context` you passed to `Toast` 
 
 ![ToastDiff.png](art/ToastDiff.png)
 
+You can raise PR for any contribution and optimization. :-)
+
 
 
 

@@ -1,4 +1,6 @@
-# ToastHandler Reference from [PureWriter/ToastCompat](https://github.com/PureWriter/ToastCompat)
+# ToastHandler
+Reference from [PureWriter/ToastCompat](https://github.com/PureWriter/ToastCompat)
+
 An Android library wrapper for handling Toast BadTokenException happening on Android API level 25 and showing Toast smoothly on All Android versions.
 
 

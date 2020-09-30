@@ -15,7 +15,11 @@ implementation 'com.toastfix:toastcompatwrapper:{latest_version}'
 Use this wherever you are showing Toast:
 
 ```java
-ToastHandler.getINSTANCE().showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
+ToastHandler.INSTANCE.showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
+```
+
+```kotlin
+ToastHandler.showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
 ```
 
 Please refer the demo for usage.

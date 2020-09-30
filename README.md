@@ -14,10 +14,12 @@ implementation 'com.toastfix:toastcompatwrapper:{latest_version}'
 
 Use this wherever you are showing Toast:
 
+Java
 ```java
 ToastHandler.INSTANCE.showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
 ```
 
+Kotlin
 ```kotlin
 ToastHandler.showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
 ```

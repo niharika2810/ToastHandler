@@ -17,7 +17,7 @@ object ToastHandler {
             ToastCompat.makeText(
                 context,
                 message,
-                Toast.LENGTH_SHORT
+                length
             ).show()
         } else {
             Toast.makeText(context, message, length).show()
@@ -32,7 +32,7 @@ object ToastHandler {
             return ToastCompat.makeText(
                 context,
                 message,
-                Toast.LENGTH_SHORT
+               length
             )
         } else {
             return Toast.makeText(context, message, length)

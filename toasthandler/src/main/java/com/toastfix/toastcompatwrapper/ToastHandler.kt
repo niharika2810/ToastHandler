@@ -1,5 +1,6 @@
 package com.toastfix.toastcompatwrapper
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Build
 import android.widget.Toast
@@ -21,16 +22,17 @@ object ToastHandler {
     /**
      * Method to return Toast instance
      */
+    @SuppressLint("ShowToast")
     @JvmStatic
     fun getToastInstance(context: Context, message: String, length: Int): Toast {
-        if (Build.VERSION.SDK_INT == Build.VERSION_CODES.N_MR1) {
-            return ToastCompat.makeText(
+        return if (Build.VERSION.SDK_INT == Build.VERSION_CODES.N_MR1) {
+            ToastCompat.makeText(
                 context,
                 message,
                 length
             )
         } else {
-            return Toast.makeText(context, message, length)
+            Toast.makeText(context, message, length)
         }
     }
 }

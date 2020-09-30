@@ -9,7 +9,7 @@ An Android library wrapper for handling Toast BadTokenException happening on And
 Add this to your app build.gradle:
 
 ```groovy
-implementation 'com.toastfix:toastcompatwrapper:{latest_version}'
+implementation "com.toastfix:toastcompatwrapper:1.1.1"
 ```
 
 Use this wherever you are showing Toast:

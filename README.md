@@ -21,7 +21,7 @@ ToastHandler.INSTANCE.showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
 
 Kotlin
 ```kotlin
-ToastHandler.showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
+ToastHandler.showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT)
 ```
 
 Please refer the demo for usage.

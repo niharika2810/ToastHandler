@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
             ToastHandler.showToast(this, "Hi,I am Toast", Toast.LENGTH_LONG)
         }
 
+        // Added this toast to test custom lint.
         Toast.makeText(this, "Hi, I am Toast", Toast.LENGTH_SHORT).show()
     }
 

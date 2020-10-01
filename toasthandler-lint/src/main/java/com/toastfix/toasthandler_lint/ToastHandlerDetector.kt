@@ -26,7 +26,15 @@ class ToastHandlerDetector : Detector(), SourceCodeScanner {
                 includeReceiver = true,
                 includeArguments = true
             ),
-            message = "Usage of android Toast is prohibited"
+            message = "Usage of android Toast is prohibited",
+            quickfixData = fix()
+                .name("Use ToastHandler.getToastInstance()")
+                .replace()
+                .text("Toast.makeText")
+                .with("com.toastfix.toastcompatwrapper.ToastHandler.getToastInstance")
+                .shortenNames()
+                .reformat(true)
+                .build()
         )
     }
 

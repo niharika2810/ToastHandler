@@ -42,7 +42,7 @@ class ToastHandlerDetector : Detector(), SourceCodeScanner {
         val ISSUE = Issue.create(
             id = "ToastUsageWarning",
             briefDescription = "The android Toast should not be used",
-            explanation = "The android Toast should not be used, use ToastHandler instead.",
+            explanation = "The android Toast should not be used, use ToastHandler instead to avoid BadTokenException",
             category = Category.CORRECTNESS,
             priority = 6,
             severity = Severity.WARNING,

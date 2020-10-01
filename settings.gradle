@@ -1,3 +1,4 @@
-include ':toasthandler'
 include ':app'
+include ':toasthandler'
+include ':toasthandler-lint'
 rootProject.name = "ToastHandler"

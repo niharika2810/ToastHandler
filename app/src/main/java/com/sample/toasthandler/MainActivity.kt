@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             ToastHandler.showToast(this, "Hi,I am Toast", Toast.LENGTH_LONG)
         }
+
+        Toast.makeText(this, "Hi,I am Toast", Toast.LENGTH_SHORT).show()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

@@ -18,6 +18,9 @@ class MainActivity : AppCompatActivity() {
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             ToastHandler.showToast(this, "Hi,I am Toast", Toast.LENGTH_LONG)
         }
+
+        // Added this toast to test custom lint.
+        Toast.makeText(this, "Hi, I am Toast", Toast.LENGTH_SHORT).show()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

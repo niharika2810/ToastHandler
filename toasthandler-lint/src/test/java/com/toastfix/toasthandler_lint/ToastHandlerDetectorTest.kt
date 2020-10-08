@@ -29,7 +29,7 @@ class ToastHandlerDetectorTest {
             )
             .issues(ToastHandlerDetector.ISSUE)
             .run()
-            .expect(
+            . dfdfdfdsfdsexpect(
                 """
                     src/SomeJavaClass.java:7: Warning: Usage of android Toast is prohibited [ToastUsageWarning]
                             Toast.makeText(context, "Hi, I am Toast", Toast.LENGTH_SHORT).show();

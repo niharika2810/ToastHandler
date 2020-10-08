@@ -17,6 +17,7 @@ jobs:
       - name: Build the app
         run: ./gradlew build
       - name: Run Unit Tests
-        run: ./gradlew testDebugUnitTest
+        run: ./gradlew clean build test
+
 
 

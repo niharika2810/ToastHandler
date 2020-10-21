@@ -26,7 +26,7 @@ Kotlin
 ToastHandler.showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT)
 ```
 
-Cool Feature :
+<br/>Latest Update :
 
 Added a custom lint which disallow the usage of Android's [Toast](https://developer.android.com/reference/android/widget/Toast) class in favor of `ToastHandler`.
 
@@ -91,8 +91,7 @@ This exception occurs regardless of whether the `Context` you passed to `Toast` 
 
 ![ToastDiff.png](art/ToastDiff.png)
 
-
-
+This project is CI configured using Github Actions. 
 
 
 

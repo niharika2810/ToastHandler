@@ -3,7 +3,7 @@ You can raise PR for any contribution and optimization. :-)
 # ToastHandler
 Reference from [StackOverFlow](https://stackoverflow.com/questions/51532449/fatal-exception-android-view-windowmanagerbadtokenexception-unable-to-add-wind)
 
-An Android library wrapper for handling Toast BadTokenException happening on Android API level 25 and showing Toast smoothly on All Android versions. Have also handled some memory leaks and created ToastHandler as Singleton(lazy-loading) for better performance.
+An Android library wrapper for handling Toast BadTokenException happening on Android API level 25 and showing Toast smoothly on All Android versions. 
 
 Please refer this [blog](https://proandroiddev.com/how-i-resolved-windowmanager-badtokenexception-for-toast-handleshow-2308203ebb91) for more details and findings.
 
@@ -94,6 +94,8 @@ This exception occurs regardless of whether the `Context` you passed to `Toast` 
  See the detail diff of **Android Toast sources**: 
 
 ![ToastDiff.png](art/ToastDiff.png)
+
+Have also handled some memory leaks and created ToastHandler as Singleton(lazy-loading) for better performance. 
 
 This project is CI configured using Github Actions. 
 

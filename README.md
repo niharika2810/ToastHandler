@@ -26,8 +26,34 @@ Kotlin
 ToastHandler.showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT)
 ```
 
-Please refer the demo for usage.
+Cool Feature :
 
+Added a custom lint which disallow the usage of Android's [Toast](https://developer.android.com/reference/android/widget/Toast) class in favor of `ToastHandler`.
+
+These are the properties of the custom lint.
+```kotlin
+message          = "Usage of android Toast is prohibited"
+briefDescription = "The android Toast should not be used"
+explanation      = "The android Toast should not be used, use ToastHandler instead to avoid BadTokenException on Android API level 25"
+category         = Category.CORRECTNESS
+priority         = 6
+severity         = Severity.WARNING
+```
+
+The custom lint is added in the `toasthandler` module as `lintPublish`.
+So, adding the library dependency into any project will also include this custom lint.
+
+This lint replaces `Toast.makeText` with `ToastHandler.getToastInstance`.
+```diff
+- Toast.makeText(this, "Hi, I am Toast", Toast.LENGTH_SHORT).show()
++ ToastHandler.getToastInstance(this, "Hi, I am Toast", Toast.LENGTH_SHORT).show()
+```
+
+Here's a small GIF showing how this will look in the IDE.
+
+![lint](https://user-images.githubusercontent.com/22273871/94834413-fa0b0e00-042d-11eb-8dda-26087568176e.gif)
+
+Please refer the demo for usage.
 
 ### Why
 

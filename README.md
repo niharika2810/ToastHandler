@@ -5,6 +5,8 @@ Reference from [StackOverFlow](https://stackoverflow.com/questions/51532449/fata
 
 An Android library wrapper for handling Toast BadTokenException happening on Android API level 25 and showing Toast smoothly on All Android versions. Have also handled some memory leaks and created ToastHandler as Singleton(lazy-loading) for better performance.
 
+Please refer this [blog](https://proandroiddev.com/how-i-resolved-windowmanager-badtokenexception-for-toast-handleshow-2308203ebb91) for more details and findings.
+
 
 ### Usage 
 
@@ -26,7 +28,9 @@ Kotlin
 ToastHandler.showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT)
 ```
 
-<br/>Latest Update :
+<br/>Also, If you forget to use it, Let the Android Lint help you :-) 
+
+Latest Feature: 
 
 Added a custom lint which disallow the usage of Android's [Toast](https://developer.android.com/reference/android/widget/Toast) class in favor of `ToastHandler`.
 

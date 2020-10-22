@@ -20,7 +20,7 @@ Use this wherever you are showing Toast:
 
 Java
 ```java
-ToastHandler.INSTANCE.showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
+ToastHandler.showToast(this, "Hello,I am Toast", Toast.LENGTH_SHORT);
 ```
 
 Kotlin

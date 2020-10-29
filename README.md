@@ -3,7 +3,7 @@ You can raise PR for any contribution and optimization. :-)
 # ToastHandler
 Reference from [StackOverFlow](https://stackoverflow.com/questions/51532449/fatal-exception-android-view-windowmanagerbadtokenexception-unable-to-add-wind)
 
-An Android library wrapper for handling Toast BadTokenException happening on Android API level 25 and showing Toast smoothly on All Android versions. 
+An Android library wrapper over ToastCompat[https://github.com/PureWriter/ToastCompat] for handling Toast BadTokenException happening on Android API level 25 and showing Toast smoothly on All Android versions. (Handling some memory leaks and changed to Kotlin with Custom Lint added)
 
 Please refer this [blog](https://proandroiddev.com/how-i-resolved-windowmanager-badtokenexception-for-toast-handleshow-2308203ebb91) for more details and findings.
 

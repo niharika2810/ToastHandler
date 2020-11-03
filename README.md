@@ -13,7 +13,7 @@ Please refer this [blog](https://proandroiddev.com/how-i-resolved-windowmanager-
 Add this to your app build.gradle:
 
 ```groovy
-implementation "com.toastfix:toastcompatwrapper:1.1.1"
+implementation "com.toastfix:toastcompatwrapper:1.2.0"
 ```
 
 Use this wherever you are showing Toast:
